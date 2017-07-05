@@ -1,0 +1,61 @@
+input[type=text] {
+  border-radius: 5px;
+
+  width: 30%;
+  height:41px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 40%;
+  background-color: white;
+}
+
+img:hover {
+  width: 103%;
+  cursor: pointer;
+}
+
+.divInRow {
+  display: inline-block;
+}
+
+td {
+   padding-right: 2%;
+}
+
+.searchIcon {
+  font-size: 33px;
+}
+
+.mainTable {
+  border-spacing: 26px;
+  border-collapse: separate;
+  display: block;
+  margin: auto;
+  width: 84%;
+}
+
+video {
+  padding-bottom: 16%;
+  padding-left: 9%;
+  width: 520px;
+  height: 397px;
+}
+
+
+.firstSubTitle {
+  font-size: 24px;
+  font-family: "Roboto";
+  color: rgb(249, 253, 253);
+  text-transform: uppercase;
+  line-height: 0.5;
+  margin-left: 10%;
+  left: 33.834px;
+  top: 116.996px;
+  width: 233px;
+  height: 18px;
+  z-index: 24;
+  text-decoration:none;
+}
