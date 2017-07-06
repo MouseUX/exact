@@ -3,13 +3,11 @@
  */
 
 
-
-
 var express = require('express');
 var lessMiddleware = require('less-middleware');
 var app = express();
 var path = require('path');
-var public_dir = path.join(__dirname,"Office");
+var public_dir = path.join(__dirname,"src");
 
 // viewed at http://localhost:8080
 app.get('/', function(req, res) {

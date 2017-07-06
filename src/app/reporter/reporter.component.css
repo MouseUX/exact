@@ -1,15 +1,20 @@
 input[type=text] {
   border-radius: 5px;
 
-  width: 160%;
+  width: 300%;
   height:41px;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
 }
 
 input[type=text]:focus {
-  width: 170%;
+  width: 350%;
   background-color: white;
+}
+
+img:hover {
+  width: 102%;
+  cursor: pointer;
 }
 
 td {
@@ -28,10 +33,11 @@ td {
 
 .generateBtn {
   border-radius: 5px;
-  opacity: 0.3;
   width: 139px;
   height: 39px;
-  border-color: white;
+  float: right;
+  padding-top: 1%;
+  padding-bottom: 2%;
 }
 
 td {
@@ -79,10 +85,6 @@ video {
   text-decoration:none;
 }
 
-.generateBtn{
-  float: right;
-  padding-top: 1%;
-}
 
 .footer {
   width: 84%;

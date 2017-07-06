@@ -7,10 +7,17 @@ import { Routes } from '@angular/router';
   templateUrl: './home.component.html'
 })
 export class HomeComponent {
-  // constructor(private router: Router, private route: ActivatedRoute) {}
+  name: string;
+  constructor() {
+    this.name="dani"
+  }
   //
   // go() {
   //   this.router.navigate([`../itemsList`], { relativeTo: this.route });
   // }
 
+  sayMyName() {
+    this.name="fsaf"
+    console.log('My name is')
+  }
 }

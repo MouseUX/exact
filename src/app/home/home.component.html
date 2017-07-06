@@ -1,6 +1,8 @@
 <div class="mainTable">
   <div _ngcontent-c1="" style="text-align: center; height: 61px;">
-    <input _ngcontent-c1="" name="search" placeholder="Search.." type="text" style="">
+    <form (keyup.enter)="sayMyName">
+      <input _ngcontent-c1="" name="search"  placeholder="Search.." type="text" style="">
+    </form>
   </div>
   <div>
     <div class="divInRow">
