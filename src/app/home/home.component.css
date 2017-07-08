@@ -2,7 +2,7 @@ input[type=text] {
   border-radius: 5px;
 
   width: 30%;
-  height:41px;
+  height: 41px;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
 }
@@ -22,7 +22,7 @@ img:hover {
 }
 
 td {
-   padding-right: 2%;
+  padding-right: 2%;
 }
 
 .searchIcon {
@@ -34,16 +34,12 @@ td {
   border-collapse: separate;
   display: block;
   margin: auto;
-  width: 84%;
 }
 
 video {
-  padding-bottom: 16%;
   padding-left: 9%;
-  width: 520px;
-  height: 397px;
+  width: 80%;
 }
-
 
 .firstSubTitle {
   font-size: 24px;
@@ -57,5 +53,5 @@ video {
   width: 233px;
   height: 18px;
   z-index: 24;
-  text-decoration:none;
+  text-decoration: none;
 }

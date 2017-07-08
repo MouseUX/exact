@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 input[type=text] {
   border-radius: 5px;
-  width: 100%;
-  height:41px;
-  padding-left:10px;
+
+  width: 30%;
+  height: 41px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
 }
 
-td {
-   padding-right: 2%;
+input[type=text]:focus {
+  width: 40%;
+  background-color: white;
 }
 
 .searchIcon {
@@ -19,4 +24,35 @@ td {
   display: block;
   margin: auto;
   width: 84%;
+}
+
+.headline {
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(249, 253, 253);
+  text-transform: uppercase;
+}
+
+.listitem {
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(249, 253, 253);
+  text-transform: none;
+}
+
+.itemTitle {
+  font-size: 24px;
+  font-family: "Roboto";
+  color: rgb(253, 254, 254);
+  text-transform: uppercase;
+}
+
+.itemText {
+  font-size: 12px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+}
+
+.selectedItemClass {
+  background: rgba(255, 255, 255, 0.5);
 }

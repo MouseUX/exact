@@ -1,33 +1,79 @@
-<div>
-  <input type="text" name="search" placeholder="Search..">
+<div style="display: flex; justify-content: space-between">
+  <div _ngcontent-c1="" style="width:100%; height: 61px;">
+    <form (keyup.enter)="sayMyName">
+      <input _ngcontent-c1="" name="search" placeholder="Search.." type="text" style="">
+    </form>
+  </div>
+  <img src="../../assets/summarize-btn.png" />
 </div>
-<div>
-  <div>
-    <div>Facet Names</div>
-    <div>CheckList</div>
-  </div>
-  <div>
-    <table>
-      <tr>
-        <td>
-          <span>
-            Date
-          </span>
-        </td>
-        <td>
-          <span>
-            item
-          </span>
-        </td>
-      </tr>
-    </table>
-  </div>
-  <div>
-    <div>
-      Title
+<div style="width: 100%; height:90%;display: flex; background: rgba(0,0,0,0.6); padding: 0.5%; margin: 0.5%">
+  <div style="width: 15%">
+    <div class="headline">
+      <div>
+        Sources
+        <div class="listitem" *ngFor="let value of sources" style="margin-bottom: 2%">
+          <input style="margin-right: 3%" type="checkbox" [checked]="value.isChecked" /> {{value.name}}
+        </div>
+      </div>
+      <div style="margin-top: 8%">
+        Related orgs.
+        <div class="listitem" *ngFor="let value of relatedOrgs" style="margin-bottom: 2%">
+          <input style="margin-right: 3%" type="checkbox" [checked]="value.isChecked" /> {{value.name}}
+        </div>
+      </div>
+      <div style="margin-top: 8%">
+        time of content
+        <div class="listitem" *ngFor="let value of timeOfContent" style="margin-bottom: 2%">
+          <input style="margin-right: 3%" type="checkbox" [checked]="value.isChecked" /> {{value.name}}
+        </div>
+      </div>
+      <div style="margin-top: 8%">
+        related entity
+        <div class="listitem" *ngFor="let value of relatedEntity" style="margin-bottom: 2%">
+          <input style="margin-right: 3%" type="checkbox" [checked]="value.isChecked" /> {{value.name}}
+        </div>
+      </div>
     </div>
-    <div>
-      body
+  </div>
+  <div style="width: 25% ">
+    <div *ngFor="let value of itemList; let i = index" [ngClass]="i === selectedItem ? 'selectedItemClass' : ''" (click)="changeSelected(i)">
+      <span>{{value['Publish Time']}}</span><span>
+          {{value.Title}}
+        </span>
+    </div>
+  </div>
+  <div style="width: 50% ">
+    <div class="itemTitle">
+      {{getSelectedItem().Title}}
+    </div>
+    <div style="display: flex">
+      <img src="../../assets/{{getSelectedItem().Picture}}" />
+      <div>
+        <div>
+          <span>Publish Time:</span><span>{{getSelectedItem()['Publish Time']}}</span>
+        </div>
+        <div>
+          <span>Source:</span><span>{{getSelectedItem().Source}}</span>
+        </div>
+        <div>
+          <span>EEI:</span><span>{{getSelectedItem().EEI}}</span>
+        </div>
+        <div>
+          <span>Person:</span><span>{{getSelectedItem().Person}}</span>
+        </div>
+        <div>
+          <span>Location:</span><span>{{getSelectedItem().Location}}</span>
+        </div>
+        <div>
+          <span>Organization:</span><span>{{getSelectedItem().Organization}}</span>
+        </div>
+        <div>
+          <span>Keyphrases:</span><span>{{getSelectedItem().KeyPhrases}}</span>
+        </div>
+      </div>
+    </div>
+    <div class="itemText">
+      {{getSelectedItem().Text}}
     </div>
   </div>
 </div>
