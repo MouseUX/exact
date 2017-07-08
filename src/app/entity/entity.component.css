@@ -44,10 +44,90 @@ td {
 }
 
 .mainTable {
-  border-spacing: 26px;
-  border-collapse: separate;
+  display: flex;
+  margin: 0 auto;
+  width: 96%;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  position: relative;
   display: block;
-  margin: auto;
-  width: 84%;
+  margin: 0 auto;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  height: 100%;
+  align-items: stretch;
+  font-size: 90%;
+}
+
+.table {
+  height: 100%;
+  display: table;
+  align-self: stretch;
+  width: 50%;
+}
+
+.table > div {
+  display: table-row;
+}
+
+.table > div > span {
+  display: table-cell;
+  vertical-align: middle;
+  
+}
+
+.table > div > span:first-child {
+  color: #8db6de;
+  text-transform: uppercase;
+}
+
+.table > div > span:last-child {
+  padding-left: 2%;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  background: rgba(19, 16, 35, .8);
+}
+
+.img {
+  margin-right: 2%;
+}
+
+.info {
+  font-family: "Roboto", sans-serif;
+  flex-direction: column;
+  display: flex;
+}
+
+.name {
+  color: #8db6de;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 125%;
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+
+.row-1, .row-2, .row2-1 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1%;
+}
+
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1%;
 }
 

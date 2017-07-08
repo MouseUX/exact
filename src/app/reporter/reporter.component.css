@@ -12,11 +12,6 @@ input[type=text]:focus {
   background-color: white;
 }
 
-img:hover {
-  width: 102%;
-  cursor: pointer;
-}
-
 td {
    padding-right: 2%;
 }
@@ -53,7 +48,7 @@ td {
   border-collapse: separate;
   display: block;
   margin: auto;
-  width: 84%;
+  width: 96%;
 }
 
 
@@ -87,5 +82,76 @@ video {
 
 
 .footer {
-  width: 84%;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+}
+
+.col-1 {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.video-box {
+  background: rgba(7, 26, 33, 0.7);
+  overflow: hidden;
+  border-radius: .2vw;
+  width: 100%;
+}
+
+.text {
+  background: rgba(7, 26, 33, 0.7);
+  border-radius: .2vw;
+  font-family: "Roboto", sans-serif;
+  font-size: 110%;
+  margin-bottom: .5%;
+  padding: 3%;
+  flex-grow: 1;
+}
+
+
+.firstSubTitle {
+  font-size: 24px;
+  font-family: "Roboto";
+  color: rgb(249, 253, 253);
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  padding-left: 3%;
+  display: block;
+}
+
+.summarize {
+  font-family: "Roboto", sans-serif;
+  float: right;
+  color: white;
+  font-size: 115%;
+  background: rgba(63, 71, 136, .5);
+  border: 2px rgba(255,255,255,.2) solid;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  margin-left: 1%;
+  border-radius: .5vw;
+  transition: all .3s ease-in-out;
+  padding: 10px 20px;
+  margin-bottom: 2%;
+}
+
+.summarize:hover {
+  background: rgba(63, 71, 136, .8);
+  font-size: 120%;
 }

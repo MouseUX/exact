@@ -1,20 +1,36 @@
 input[type=text] {
   border-radius: 5px;
 
-  width: 30%;
+  width: 100%;
   height: 41px;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
+  background: rgba(0,0,0,.3);
+  border: none;
+  outline: none;
+  color: white;
+  padding-left: 20px;
+  font-size: 120%;
+  line-height: 120%;
+  font-family: "Roboto", sans-serif;;
+}
+
+input[type=text]::placeholder {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
 }
 
 input[type=text]:focus {
-  width: 40%;
-  background-color: white;
+  width: 100%;
 }
 
-img:hover {
-  width: 103%;
+img {
+  max-width: 100%;
+  height: auto;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
 }
 
 .divInRow {
@@ -32,13 +48,15 @@ td {
 .mainTable {
   border-spacing: 26px;
   border-collapse: separate;
-  display: block;
   margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
 video {
-  padding-left: 9%;
-  width: 80%;
+  width: 100%;
 }
 
 .firstSubTitle {
@@ -46,12 +64,39 @@ video {
   font-family: "Roboto";
   color: rgb(249, 253, 253);
   text-transform: uppercase;
-  line-height: 0.5;
-  margin-left: 10%;
-  left: 33.834px;
-  top: 116.996px;
-  width: 233px;
-  height: 18px;
-  z-index: 24;
   text-decoration: none;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  padding-left: 3%;
+  display: block;
+}
+
+.col-1 {
+  width: 40%;
+  margin-right: .5%;
+}
+
+.col-2 {
+  width: 59%;
+  display: flex;
+  flex-direction: column;
+}
+
+.row-1 {
+  width: 100%;
+}
+
+.row-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.video-box {
+  margin-left: 2%;
+  background: rgba(7, 26, 33, 0.5);
+  overflow: hidden;
+  border-radius: .2vw;
+  width: 97%;
 }

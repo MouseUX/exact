@@ -1,10 +1,11 @@
 .navBar {
-  border: 1px solid #ccc;
+  font-family: "Roboto", sans-serif;
   border-radius: 5px;
-  width: 85%;
-  margin-left: 3%;
-  margin-top: 1%;
+  margin-left: 2%;
   margin-bottom: 2%;
+  width: 96%;
+  background: rgba(7, 26, 33, 0.7);
+  text-transform: uppercase;
 }
 .categorize {
   display: inline-block;
@@ -14,21 +15,7 @@
   padding-bottom: 1%;
 }
 
-a:link {
-  color: White;
-}
-
-/* visited link */
-a:visited {
-  color: White;
-}
-
-/* mouse over link */
-a:hover {
-  color: White;
-}
-
-/* selected link */
-a:active {
-  color: White;
+a {
+  text-decoration: none !important;
+  color: white !important;
 }

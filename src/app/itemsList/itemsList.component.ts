@@ -12,6 +12,7 @@ export class ItemsListComponent {
   relatedEntity: Array<Object>;
   itemList: Array<Object>;
   selectedItem: any;
+  getDate: Function = Object => Object;
 
   constructor() {
     this.sources = [
@@ -42,6 +43,11 @@ export class ItemsListComponent {
       { isChecked: true, name: 'Nasir al-Wuhayshi' },
       { isChecked: true, name: 'Qasim al-Raymi' },
     ];
+    
+    this.getDate = function(val) {
+      const d = new Date(val['Publish Time']);
+      return d.toLocaleDateString();
+    }
 
     this.selectedItem = 0;
     this.itemList = [

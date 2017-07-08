@@ -3,31 +3,31 @@
     <div class="divInRow">
       <span class="title">Terror in the gulf</span>
     </div>
-    <div class="divInRow" style="margin-left: 19%;">
-      <input type="text" name="search" placeholder="Search..">
-    </div>
   </div>
-  <div>
-    <div class="divInRow " style="width: 30%;">
-      <div >
-        <span class="title">Terror in the gulf</span>
+  <div class="container">
+    <div class="col-1">
+      <div class="text">
+        Saudi security forces on Friday (June 23rd) prevented an imminent attack on the Grand Mosque in Mecca, the country's Interior Ministry said on state-run TV.    A suspect in the planned attack on the mosque blew himself up in a nearby neighborhood when security forces surrounded a home where the man was hiding, according to the ministry.    The suspect refused to comply with demands to surrender, opened fire on security forces and then killed himself, officials said.    The explosion caused the partial collapse of the building in which the suspect was hiding. Six expatriates were injured and taken to a hospital...
       </div>
-        <span class="textArea title" style="width:250px;height:150px; line-height: 1.3;">
-Saudi security forces on Friday (June 23rd) prevented an imminent attack on the Grand Mosque in Mecca, the country's Interior Ministry said on state-run TV.    A suspect in the planned attack on the mosque blew himself up in a nearby neighborhood when security forces surrounded a home where the man was hiding, according to the ministry.    The suspect refused to comply with demands to surrender, opened fire on security forces and then killed himself, officials said.    The explosion caused the partial collapse of the building in which the suspect was hiding. Six expatriates were injured and taken to a hospital...
-        </span>
+      <div class="video-box">
+        <div class="firstSubTitle">
+          Power Map
+        </div>
+        <div>
+          <video loop autoplay>
+            <source src="../../assets/movie.mp4" type="video/mp4"> Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
     </div>
-    <div class="divInRow middleDiv"><img src="../../assets/2.1.png"></div>
-    <div class="divInRow"><img src="../../assets/2.1.2.png"></div>
-  </div>
-  <div>
-      <div class="divInRow" style="width: 30%;">
-        <video controls autoplay>
-          <source src="../../assets/movie.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="divInRow middleDiv"><img src="../../assets/2.3.png"></div>
-      <div class="divInRow"><img src="../../assets/2.4.png"></div>
+    <div class="col-2">
+      <div><img src="../../assets/2.1.png"></div>
+      <div><a [routerLink]="['/entity']"><img src="../../assets/2.3.png"></a></div>
+    </div>
+    <div class="col-3">
+      <div><img src="../../assets/2.1.2.png"></div>
+      <div><img src="../../assets/2.4.png"></div>
+    </div>
   </div>
   <div class="footer">
     <div style ="padding-top: 2%; padding-bottom: 1%;">
@@ -36,12 +36,8 @@ Saudi security forces on Friday (June 23rd) prevented an imminent attack on the 
     <div>
       <textarea class="conclusionArea"></textarea>
     </div>
-    <div class="generateBtn">
-      <form method="get" action="../../assets/Demo.pdf">
-        <button type="submit" md-button>
-           Generate Report
-        </button>
-      </form>
+    <div class="summarize">
+      generate report
     </div>
   </div>
 

@@ -1,12 +1,14 @@
-<div style="display: flex; justify-content: space-between">
-  <div _ngcontent-c1="" style="width:100%; height: 61px;">
+<div style="display: flex; justify-content: space-between; width: 96%; margin: 0 auto">
+  <div _ngcontent-c1="" style="width:100%;">
     <form (keyup.enter)="sayMyName">
       <input _ngcontent-c1="" name="search" placeholder="Search.." type="text" style="">
     </form>
   </div>
-  <img src="../../assets/summarize-btn.png" />
+  <div class="summarize">
+    summarize
+  </div>
 </div>
-<div style="width: 100%; height:90%;display: flex; background: rgba(0,0,0,0.6); padding: 0.5%; margin: 0.5%">
+<div class="info-box">
   <div style="width: 15%">
     <div class="headline">
       <div>
@@ -36,19 +38,19 @@
     </div>
   </div>
   <div style="width: 25% ">
-    <div *ngFor="let value of itemList; let i = index" [ngClass]="i === selectedItem ? 'selectedItemClass' : ''" (click)="changeSelected(i)">
-      <span>{{value['Publish Time']}}</span><span>
+    <div *ngFor="let value of itemList; let i = index" [ngClass]="i === selectedItem ? 'selectedItemClass item' : 'item'" (click)="changeSelected(i)">
+      <span>{{getDate(value)}}</span><span>
           {{value.Title}}
         </span>
     </div>
   </div>
-  <div style="width: 50% ">
+  <div style="width: 60% ">
     <div class="itemTitle">
       {{getSelectedItem().Title}}
     </div>
-    <div style="display: flex">
-      <img src="../../assets/{{getSelectedItem().Picture}}" />
-      <div>
+    <div class="summary-container">
+      <div><img src="../../assets/{{getSelectedItem().Picture}}" /></div>
+      <div class="table">
         <div>
           <span>Publish Time:</span><span>{{getSelectedItem()['Publish Time']}}</span>
         </div>
