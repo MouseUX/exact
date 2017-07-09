@@ -1,14 +1,26 @@
 <div class="mainTable">
   <div style="padding-bottom: 1%">
-    <div class="divInRow">
-      <span class="title">Terror in Yemen</span>
+    <div style="display:flex;justify-content: space-between; flex-wrap: wrap; flex-shrink: 1" class="divInRow">
+      <div class="title">Terror in Yemen</div>
+      <div style="flex-wrap: wrap !important; flex-shrink: 0; width: 20%">
+        <span class="menuitems" (click)="openHumint()">HUMINT</span>
+        <span class="menuitems" (click)="openOsint()">OSINT</span>
+        <span class="menuitems" (click)="openSigint()">SIGINT</span>
+        <span class="menuitems" (click)="openGeoint()">GEOINT</span>
+        <span class="menuitems" (click)="openCyber()">CYBER</span>
+      </div>
     </div>
   </div>
-  <div class="container">
+  <div class="containerExact">
     <div class="col-1">
       <div class="text">
         <div class="title2">Analyst Assessments</div>
-        Additional searches shows other indications regarding the failure of Yemen, which should not only be seen as an internal threat upon its stability, but also as a threat to the security of the world's largest oil producer, Saudi Arabia. And a threat to Saudi Arabia is not only a serious threat to the Arabian Peninsula and the entire Middle East, but also to the world’s economy. It is, therefore, essential that the US and its allies in the Gulf formulate a plan that can appease both Yemenite and revolutionary elites alike in Yemen's first steps towards democracy, given the understanding that promoting national dialogue is the way to achieve long-term stability and security.
+        Additional searches shows other indications regarding the failure of Yemen, which should not only be seen as an internal
+        threat upon its stability, but also as a threat to the security of the world's largest oil producer, Saudi Arabia.
+        And a threat to Saudi Arabia is not only a serious threat to the Arabian Peninsula and the entire Middle East, but
+        also to the world’s economy. It is, therefore, essential that the US and its allies in the Gulf formulate a plan
+        that can appease both Yemenite and revolutionary elites alike in Yemen's first steps towards democracy, given the
+        understanding that promoting national dialogue is the way to achieve long-term stability and security.
       </div>
       <div class="video-box">
         <div class="firstSubTitle">
@@ -40,7 +52,7 @@
   </div>
   <div class="footer">
     <div>
-      <div style ="padding-top: 2%; padding-bottom: 1%;">
+      <div style="padding-top: 2%; padding-bottom: 1%;">
         <span class="title">ANALYST EVELUATION</span>
       </div>
       <div>
@@ -48,7 +60,7 @@
       </div>
     </div>
     <div>
-      <div style ="padding-top: 2%; padding-bottom: 1%;">
+      <div style="padding-top: 2%; padding-bottom: 1%;">
         <span class="title">RECOMMENDATION</span>
       </div>
       <div>
