@@ -18,7 +18,7 @@ export class CustomModalContext extends BSModalContext {
     `
         .custom-modal-container {
             padding: 15px;
-            background-image: url('/assets/background.jpg');
+            background-image: url('assets/background.jpg');
         }
         .custom-modal-header {
             color: #fff;
@@ -41,7 +41,7 @@ export class CustomModalContext extends BSModalContext {
             </div>
             <div class="row">
                 <div class="col-xs-12">
-                    <img style="max-width: 100%;" src="/assets/{{context.image}}" />
+                    <img style="max-width: 100%;" src="assets/{{context.image}}" />
                     <p style="font-size: 1.2em">{{context.content}}</p>
                 </div>
             </div>

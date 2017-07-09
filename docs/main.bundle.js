@@ -220,11 +220,11 @@ CustomModal = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
         selector: 'modal-content',
         styles: [
-            "\n        .custom-modal-container {\n            padding: 15px;\n            background-image: url('/assets/background.jpg');\n        }\n        .custom-modal-header {\n            color: #fff;\n            -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);\n            -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);\n            box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);\n            margin-top: -15px;\n            margin-bottom: 40px;\n        }\n    ",
+            "\n        .custom-modal-container {\n            padding: 15px;\n            background-image: url('assets/background.jpg');\n        }\n        .custom-modal-header {\n            color: #fff;\n            -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);\n            -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);\n            box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);\n            margin-top: -15px;\n            margin-bottom: 40px;\n        }\n    ",
         ],
         //TODO: [ngClass] here on purpose, no real use, just to show how to workaround ng2 issue #4330.
         // Remove when solved.
-        /* tslint:disable */ template: "\n        <div class=\"container-fluid custom-modal-container\">\n            <div class=\"row custom-modal-header\">\n                <div class=\"col-sm-12\">\n                    <h1>{{context.title}}</h1>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-xs-12\">\n                    <img style=\"max-width: 100%;\" src=\"/assets/{{context.image}}\" />\n                    <p style=\"font-size: 1.2em\">{{context.content}}</p>\n                </div>\n            </div>\n        </div>",
+        /* tslint:disable */ template: "\n        <div class=\"container-fluid custom-modal-container\">\n            <div class=\"row custom-modal-header\">\n                <div class=\"col-sm-12\">\n                    <h1>{{context.title}}</h1>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-xs-12\">\n                    <img style=\"max-width: 100%;\" src=\"assets/{{context.image}}\" />\n                    <p style=\"font-size: 1.2em\">{{context.content}}</p>\n                </div>\n            </div>\n        </div>",
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_angular2_modal__["f" /* DialogRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_angular2_modal__["f" /* DialogRef */]) === "function" && _a || Object])
 ], CustomModal);
