@@ -103,10 +103,13 @@ img {
 }
 
 .video-box {
+  margin-left: 1%;
   background: rgba(7, 26, 33, 0.7);
   overflow: hidden;
   border-radius: .2vw;
   width: 100%;
+  margin-bottom: 1%;
+  border: 1px rgba(255,255,255,.3) solid;
 }
 
 .text {
@@ -117,6 +120,7 @@ img {
   margin-bottom: .5%;
   padding: 3%;
   flex-grow: 1;
+  margin-left: 1%;
 }
 
 
@@ -154,4 +158,9 @@ img {
 .summarize:hover {
   background: rgba(63, 71, 136, .8);
   font-size: 120%;
+}
+
+.col-3 {
+  margin-left: .5%;
+  width: 25%;
 }
