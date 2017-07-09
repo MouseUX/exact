@@ -84,6 +84,7 @@ video {
 
 .row-1 {
   width: 100%;
+  margin-left: .5%;
 }
 
 .row-2 {
@@ -94,9 +95,50 @@ video {
 }
 
 .video-box {
-  margin-left: 2%;
-  background: rgba(7, 26, 33, 0.5);
-  overflow: hidden;
+  margin-left: 1%;
+  background: rgba(7, 26, 33, 0.7);
   border-radius: .2vw;
-  width: 97%;
+  width: 100%;
+  margin-bottom: 1%;
+  border: 1px rgba(255,255,255,.3) solid;
+  position: relative;
+}
+
+.tooltip:before {
+  content: '';
+  display: block;
+  padding: 4px 20px;
+  border: 1px rgba(255,255,255,.3) solid;
+  border-radius: 5px;
+  color: white;
+  background: rgba(20, 39, 55, .95);
+  opacity: 0;
+  transition: all .3s ease-in-out;
+  direction: rtl;
+  text-align: right;
+  position: absolute;
+  width: 90%;
+  right: 50%;
+  transform: translate(50%);
+  top: -40px;
+}
+
+.tooltip:hover:before {
+  opacity: 1;
+}
+
+.yemen:before {
+  content: 'الاستقرار اليمني';
+}
+
+.america:before {
+  content: 'المشاركة الأمريكية في الشرق الأوسط‬‬';
+}
+
+.terror:before {
+  content: 'الإرهاب في الخليج';
+}
+
+.saudi:before {
+  content: 'المملكة العربية السعودية‬‬';
 }

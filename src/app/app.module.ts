@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { EntityComponent } from './entity/entity.component';
 import { ItemsListComponent } from './itemsList/itemsList.component';
 import { ReporterComponent } from './reporter/reporter.component';
+import { Reporter2Component } from './reporter2/reporter2.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { ReporterComponent } from './reporter/reporter.component';
     HomeComponent,
     EntityComponent,
     ReporterComponent,
+    Reporter2Component,
     ItemsListComponent
   ],
   imports: [
