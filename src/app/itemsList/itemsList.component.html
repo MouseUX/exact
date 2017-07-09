@@ -1,7 +1,7 @@
 <div style="display: flex; justify-content: space-between; width: 96%; margin: 0 auto">
   <div _ngcontent-c1="" style="width:100%;">
     <form (keyup.enter)="sayMyName">
-      <input _ngcontent-c1="" name="search" placeholder="Search.." type="text" style="">
+      <input _ngcontent-c1="" name="search" placeholder="Search.." type="text" style="" value="Yemen Terror">
     </form>
   </div>
   <div [routerLink]="['/reporter']" class="summarize">
@@ -12,33 +12,37 @@
   <div style="width: 15%">
     <div class="headline">
       <div>
-        Sources
+        <div style="display:flex;justify-content:space-between">
+          <div>Sources</div>
+          <div style="text-decoration: underline; text-transform: lowercase" (click)="filter()">Filter</div>
+        </div>
         <div class="listitem" *ngFor="let value of sources" style="margin-bottom: 2%">
-          <input style="margin-right: 3%" type="checkbox" [checked]="value.isChecked" /> {{value.name}}
+          <input style="margin-right: 3%" type="checkbox" [(checked)]="value.isChecked" /> {{value.name}}
         </div>
       </div>
       <div style="margin-top: 8%">
         Related orgs.
         <div class="listitem" *ngFor="let value of relatedOrgs" style="margin-bottom: 2%">
-          <input style="margin-right: 3%" type="checkbox" [checked]="value.isChecked" /> {{value.name}}
+          <input style="margin-right: 3%" type="checkbox" [(checked)]="value.isChecked" /> {{value.name}}
         </div>
       </div>
       <div style="margin-top: 8%">
         time of content
         <div class="listitem" *ngFor="let value of timeOfContent" style="margin-bottom: 2%">
-          <input style="margin-right: 3%" type="checkbox" [checked]="value.isChecked" /> {{value.name}}
+          <input style="margin-right: 3%" type="checkbox" [(checked)]="value.isChecked" /> {{value.name}}
         </div>
       </div>
       <div style="margin-top: 8%">
         related entity
         <div class="listitem" *ngFor="let value of relatedEntity" style="margin-bottom: 2%">
-          <input style="margin-right: 3%" type="checkbox" [checked]="value.isChecked" /> {{value.name}}
+          <input style="margin-right: 3%" type="checkbox" [(checked)]="value.isChecked" /> {{value.name}}
         </div>
       </div>
     </div>
   </div>
   <div style="width: 25% ">
-    <div *ngFor="let value of itemList; let i = index" [ngClass]="i === selectedItem ? 'selectedItemClass item' : 'item'" (click)="changeSelected(i)">
+    <div *ngFor="let value of getItemList(); let i = index" [ngClass]="i === selectedItem ? 'selectedItemClass item' : 'item'"
+      (click)="changeSelected(i)">
       <span>{{getDate(value)}}</span><span>
           {{value.Title}}
         </span>
