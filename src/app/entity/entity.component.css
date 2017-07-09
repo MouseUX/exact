@@ -65,13 +65,16 @@ img {
   height: 100%;
   align-items: stretch;
   font-size: 90%;
+  position: relative;
 }
+
+
 
 .table {
   height: 100%;
   display: table;
   align-self: stretch;
-  width: 50%;
+  width: 100%;
 }
 
 .table > div {
@@ -98,6 +101,7 @@ img {
   flex-direction: row;
   flex-grow: 1;
   background: rgba(19, 16, 35, .8);
+  width: 150%;
 }
 
 .img {
@@ -117,6 +121,8 @@ img {
   font-size: 125%;
   padding-top: 2%;
   padding-bottom: 1%;
+  display: flex;
+  margin-bottom: 2%;
 }
 
 .row-1, .row-2, .row2-1 {
@@ -141,6 +147,14 @@ img {
   margin-bottom: 4%;
   padding-left: 3%;
   display: block;
+}
+
+.text {
+  padding-left: 3%;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  font-size: 18px;
+  font-family: "Roboto";
 }
 
 .video-box {
