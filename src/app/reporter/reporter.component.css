@@ -103,7 +103,6 @@ img {
 }
 
 .video-box {
-  margin-left: 1%;
   background: rgba(7, 26, 33, 0.7);
   overflow: hidden;
   border-radius: .2vw;
@@ -120,7 +119,6 @@ img {
   margin-bottom: .5%;
   padding: 3%;
   flex-grow: 1;
-  margin-left: 1%;
 }
 
 
@@ -158,6 +156,10 @@ img {
 .summarize:hover {
   background: rgba(63, 71, 136, .8);
   font-size: 120%;
+}
+
+.col-1 {
+  margin-right: .5%;
 }
 
 .col-3 {

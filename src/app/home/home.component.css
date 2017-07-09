@@ -73,18 +73,21 @@ video {
 
 .col-1 {
   width: 40%;
-  margin-right: .5%;
+  margin-right: .2%;
 }
 
 .col-2 {
-  width: 59%;
+  width: 60%;
   display: flex;
   flex-direction: column;
 }
 
+.col2-1 {
+  margin-right: .2%;
+}
+
 .row-1 {
   width: 100%;
-  margin-left: .5%;
 }
 
 .row-2 {
@@ -95,7 +98,6 @@ video {
 }
 
 .video-box {
-  margin-left: 1%;
   background: rgba(7, 26, 33, 0.7);
   border-radius: .2vw;
   width: 100%;
@@ -109,9 +111,8 @@ video {
   display: block;
   padding: 4px 20px;
   border: 1px rgba(255,255,255,.3) solid;
-  border-radius: 5px;
   color: white;
-  background: rgba(20, 39, 55, .95);
+  background: rgba(80, 39, 115, 0.85);
   opacity: 0;
   transition: all .3s ease-in-out;
   direction: rtl;
@@ -121,6 +122,7 @@ video {
   right: 50%;
   transform: translate(50%);
   top: -40px;
+  pointer-events: none;
 }
 
 .tooltip:hover:before {
@@ -141,4 +143,12 @@ video {
 
 .saudi:before {
   content: 'المملكة العربية السعودية‬‬';
+}
+
+.economy:before {
+  content: 'اقتصاد الخليج';
+}
+
+.social:before {
+  content: 'اتجاهات وسائل الاعلام الاجتماعية‬‬';
 }
