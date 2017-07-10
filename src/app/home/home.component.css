@@ -5,14 +5,14 @@ input[type=text] {
   height: 41px;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
-  background: rgba(0,0,0,.3);
+  background: rgba(0, 0, 0, .3);
   border: none;
   outline: none;
   color: white;
   padding-left: 20px;
   font-size: 120%;
   line-height: 120%;
-  font-family: "Roboto", sans-serif;;
+  font-family: "Roboto", sans-serif;
 }
 
 input[type=text]::placeholder {
@@ -102,15 +102,15 @@ video {
   border-radius: .2vw;
   width: 100%;
   margin-bottom: 1%;
-  border: 1px rgba(255,255,255,.3) solid;
+  border: 1px rgba(255, 255, 255, .3) solid;
   position: relative;
 }
 
-.tooltip:before {
+.tooltipExact:before {
   content: '';
   display: block;
   padding: 4px 20px;
-  border: 1px rgba(255,255,255,.3) solid;
+  border: 1px rgba(255, 255, 255, .3) solid;
   color: white;
   background: rgba(80, 39, 115, 0.85);
   opacity: 0;
@@ -125,7 +125,7 @@ video {
   pointer-events: none;
 }
 
-.tooltip:hover:before {
+.tooltipExact:hover:before {
   opacity: 1;
 }
 

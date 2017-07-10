@@ -14,7 +14,7 @@
       <div>
         <div style="display:flex;justify-content:space-between">
           <div>Sources</div>
-          <div style="text-decoration: underline; text-transform: lowercase" (click)="filter()">Filter</div>
+          <div style="text-decoration: underline; text-transform: uppercase; font-size: 14px; margin-right: 5%" (click)="filter()">Filter</div>
         </div>
         <div class="listitem" *ngFor="let value of sources" style="margin-bottom: 2%">
           <input style="margin-right: 3%" type="checkbox" [(checked)]="value.isChecked" /> {{value.name}}
@@ -40,7 +40,7 @@
       </div>
     </div>
   </div>
-  <div style="width: 25% ">
+  <div style="width: 25%; border-left: white ridge; padding: 1% ">
     <div *ngFor="let value of getItemList(); let i = index" [ngClass]="i === selectedItem ? 'selectedItemClass item' : 'item'"
       (click)="changeSelected(i)">
       <span>{{getDate(value)}}</span><span>
@@ -48,7 +48,7 @@
         </span>
     </div>
   </div>
-  <div style="width: 60% ">
+  <div style="width: 60%; border-left: white ridge; padding: 1% ">
     <div class="itemTitle">
       {{getSelectedItem().Title}}
     </div>

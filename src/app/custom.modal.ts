@@ -18,15 +18,13 @@ export class CustomModalContext extends BSModalContext {
     `
         .custom-modal-container {
             padding: 15px;
-            background-image: url('assets/background.jpg');
+            background-color: rgba(17,17,17,0.659);
         }
         .custom-modal-header {
-            color: #fff;
-            -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
-            -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
-            box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
-            margin-top: -15px;
-            margin-bottom: 40px;
+            font-size: 24px;
+            font-family: "Roboto";
+            color: rgb(253, 254, 254);
+            text-transform: uppercase;
         }
     `,
   ],
@@ -42,7 +40,7 @@ export class CustomModalContext extends BSModalContext {
             <div class="row">
                 <div class="col-xs-12">
                     <img style="max-width: 100%;" src="assets/{{context.image}}" />
-                    <p style="font-size: 1.2em">{{context.content}}</p>
+                    <p style="margin-top:2%; font-size: 1.2em">{{context.content}}</p>
                 </div>
             </div>
         </div>`,
